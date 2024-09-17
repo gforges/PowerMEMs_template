@@ -3,6 +3,7 @@
   authors: (),
   abstract: [],
   keywords: (),
+  affiliations: (),
   corps_du_texte,
   ) = {
 
@@ -16,7 +17,7 @@
   set par(justify: true)
   
   set text(
-    font: "Times New Roman",
+    font: "PT sans",
     size: 10pt,
   )
 
@@ -34,9 +35,15 @@
   strong[#smallcaps(text(14pt, title))]
   [ \ ]
 
-  text(12pt, font: "Times New Roman", style: "italic", authors.enumerate().map(((i, author)) => author.name + [ ] + super[#(i+1)]).join(", "))
+  text(12pt, font: "Times New Roman", style: "italic", authors.enumerate().map(((i, author)) => author.name + [ ] + super[#( author.affiliation.join(",") )]).join(", "))
   [ \ ]
-  text(12pt, font: "Times New Roman", authors.enumerate().map(((i, author)) => author.affiliation + [ ] + super[#(i+1)]).join("and "))
+
+  for (num, aff) in affiliations {
+    text(10pt, font: "Times New Roman", style: "italic", super[#(num)] + [ ] + aff + [ ],)
+  }
+  
+
+  // text(12pt, font: "Times New Roman", authors.enumerate().map(((i, author)) => author.affiliation + [ ] + super[#(i+1)]).join("and "))
 
   set text(10pt)
   set par(justify: true)

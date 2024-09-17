@@ -6,15 +6,18 @@
   authors: (
     (
       name: "G. Forges",
-      affiliation: "Université Savoie Mont Blanc",
+    affiliation: ("1","2"),
       
     ),
     (
       name: "D. Gibus",
-      affiliation: "Université Savoie Mont Blanc",
+      affiliation: ("1",) ,
       
     ),
   ),
+  affiliations: ("1":"Université de Lorraine, France", 
+  "2":"Univ. Savoie Mont Blanc, France"),
+
   abstract: [ceci est l'abstract du proceeding je veux tester la justification ainsi que la présence des deux colonnes],
   corps_du_texte,
   keywords: [Energy harvesting; Piezoelectricity; auxetic structures; coupling coefficient; material coefficients; energy ratio]
