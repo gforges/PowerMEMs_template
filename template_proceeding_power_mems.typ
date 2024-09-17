@@ -32,7 +32,7 @@
 
   linebreak()
 
-  text(12pt, style: "italic", authors.enumerate().map(((i, author)) => author.name + [ ] + super[#(author.affiliation.join(",") )]).join(", "))
+  text(12pt, style: "italic", authors.enumerate().map(((i, author)) => author.name + super[#(author.affiliation.join(",") )]).join(", "))
 
   linebreak()
 
