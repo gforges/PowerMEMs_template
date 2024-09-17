@@ -32,11 +32,11 @@
   
 )
 = introduction
-== Main focus
+== Sous-section 1
 #h(0.635cm)
 #lorem(140)
 
-= test figure - image
+= Section 2
 
 #figure(
   align(center,image("test.jpg", width: 70%)),
@@ -46,7 +46,13 @@
 #h(0.635cm)
 #lorem(100)
 
-= test figure - tab
+= Section 3
+== Sous-section 1
+#h(0.635cm)
+#lorem(20)
+== Sous-section 2
+#h(0.635cm)
+#lorem(20)
 
 #figure(
   table(
