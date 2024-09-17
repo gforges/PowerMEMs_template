@@ -28,16 +28,22 @@
   corps_du_texte,
 
   abstract: lorem(20),
-  
   keywords: lorem(20),
   
 )
-
 = introduction
+== Main focus
+#h(0.635cm)
 #lorem(140)
+
 == Motivation
+#h(0.635cm)
 #lorem(140)
+
 == Problem Statement
+#h(0.635cm)
 #lorem(50)
+
 = related work
+#h(0.635cm)
 #lorem(200)
