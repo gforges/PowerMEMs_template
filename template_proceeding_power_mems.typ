@@ -7,6 +7,8 @@
   corps_du_texte,
   ) = {
 
+  set math.equation(numbering:"(1)",number-align:horizon)
+
   set page(
     paper: "a4", 
     margin: (x: 1.9cm, y: 1.9cm), 
@@ -52,7 +54,6 @@
     #text(keywords)
   ]
   corps_du_texte
-  set math.equation(numbering: n => numbering("(1)"))
 }
 
 

@@ -50,6 +50,17 @@
 == Sous-section 1
 #h(0.635cm)
 #lorem(20)
+
+CECI EST UN TEST POUR LES EQUATIONS.
+
+Let $a$, $b$, and $c$ be the side
+lengths of right-angled triangle.
+Then, we know that:
+$ a^2 + b^2 = c^2 $
+
+Prove by induction:
+$ cases(sum_(k=1)^n k = (n(n+1)) / 2,x=2)  $
+
 == Sous-section 2
 #h(0.635cm)
 #lorem(20)
@@ -63,14 +74,14 @@
     [], [*Area*], [*Parameters*],
   ),
   "cylinder",
-  $ pi h (D^2 - d^2) / 4 $,
+  $ pi h (D^2 - d^2) / 4$,
   [
     $h$: height \
     $D$: outer radius \
     $d$: inner radius
   ],
   "tetrahedron",
-  $ sqrt(2) / 12 a^3 $,
+  $ sqrt(2) / 12 a^3$,
   [$a$: edge length]
 ), 
 caption: [test tableau] 
