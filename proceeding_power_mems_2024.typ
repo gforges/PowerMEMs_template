@@ -5,7 +5,7 @@
   ],
   authors: (
     (
-    name: "David Smith",
+    name: "Gregoire Forges",
     affiliation: ("1","2"),
     ),
     (
