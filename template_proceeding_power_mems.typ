@@ -35,16 +35,15 @@
   strong[#smallcaps(text(14pt, title))]
   [ \ ]
 
-  text(12pt, font: "Times New Roman", style: "italic", authors.enumerate().map(((i, author)) => author.name + [ ] + super[#( author.affiliation.join(",") )]).join(", "))
+  text(12pt, font: "Times New Roman", style: "italic", authors.enumerate().map(((i, author)) => author.name + [ ] + super[#(author.affiliation.join(",") )]).join(", "))
   [ \ ]
 
-  for (num, aff) in affiliations {
-    text(10pt, font: "Times New Roman", style: "italic", super[#(num)] + [ ] + aff + [ ],)
-  }
+  text(12pt, font: "Times New Roman", affiliations.enumerate().map(((i, affiliations)) => affiliations.name + [ ] + super[#(affiliations.number.join(",") )]).join("and "))
+
+  // for (num, aff) in affiliations {
+  //   text(12pt, font: "Times New Roman", super[#(num)]+ [] + aff + [ ])
+  // }
   
-
-  // text(12pt, font: "Times New Roman", authors.enumerate().map(((i, author)) => author.affiliation + [ ] + super[#(i+1)]).join("and "))
-
   set text(10pt)
   set par(justify: true)
   set align(left)
