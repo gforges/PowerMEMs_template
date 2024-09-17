@@ -30,31 +30,46 @@
   text(12pt, font: "Times New Roman", style: "italic", authors.enumerate().map(((i, author)) => author.name + [ ] + super[#(author.affiliation.join(",") )]).join(", "))
   [ \ ]
 
-  text(12pt, font: "Times New Roman", affiliations.enumerate().map(((i, affiliations)) => super[#(affiliations.number.join(",") )] + affiliations.name + [ ]).join("and "))
+  text(12pt, font: "Times New Roman", affiliations.enumerate().map(((i, affiliations)) => super[#(affiliations.number.join(",") )] + affiliations.name + [ ]).join("and" + linebreak()))
+  [ \ ]
 
   set text(
     lang: "En",
     font: "Times New Roman",
     size: 12pt,
   )
-  set par(
-    justify: true,
-    first-line-indent: 0.635cm,
-  )
+  
+  // set par(
+  //   justify: true,
+  //   first-line-indent: 0.635cm,
+  // )
+  set par(justify: false, leading: 1.5em, first-line-indent:2em )
+  set par( hanging-indent:-1em )
+  show heading: it => pad(left: -.6cm, it)
+
+
+  show heading : it => text(font: "Times New Roman", size: 12pt)[#highlight[#it]]
+
   set align(left)
 
   show: columns.with(2, gutter: 0.635cm)
 
   [
     = abstract
+     
+    xxx
+
     #text(font:"Times New Roman", abstract)
     
     = keywords
+
     #text(font:"Times New Roman", keywords)
   ]
  
   corps_du_texte
   set math.equation(numbering: n => numbering("(1)"))
+
+  [= Tutu]
 }
 
 
