@@ -9,14 +9,14 @@
     affiliation: ("1","2"),
     ),
     (
-    name: "Julian Ferrera",
+    name: "uuu Ferrera",
     affiliation: ("1",), 
     ),
   ),
 
   affiliations: (
   (
-    name : "Git hub"  ,
+    name : "Github"  ,
     number: ("1",)
   ),
   (

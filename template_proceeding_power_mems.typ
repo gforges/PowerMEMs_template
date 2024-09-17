@@ -20,6 +20,7 @@
     font: "Times New Roman",
     size: 10pt,
   )
+  show bibliography: set block(height: 0.6em, below: 0.6em)
   show figure.caption: emph
   show figure.where(kind: table): set figure.caption(position: top)
   show heading: set block(spacing: 1em)
