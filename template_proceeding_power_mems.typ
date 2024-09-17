@@ -18,6 +18,8 @@
     font: "Times New Roman",
     size: 10pt,
   )
+  show figure.caption: emph
+  show figure.where(kind: table): set figure.caption(position: top)
   show heading: set block(spacing: 1em)
   show heading.where(level: 1): it => block(text(size: 12pt,strong(upper(it.body))) + v(-0.5em))
   show heading.where(level: 2): it => block(text(size: 10pt, strong(it.body))+ v(-0.4em))
@@ -40,7 +42,6 @@
   )
 
   show: columns.with(2, gutter: 0.635cm)
-
   [
     = Abstract
     #h(0.635cm)
