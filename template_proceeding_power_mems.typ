@@ -22,6 +22,7 @@
   )
   show bibliography: set block(height: 0.6em, below: 0.6em)
   show figure.caption: emph
+  show figure.caption: set align(start)
   show figure.where(kind: table): set figure.caption(position: top)
   show heading: set block(spacing: 1em)
   show heading.where(level: 1): it => block(text(size: 12pt,strong(upper(it.body))) + v(-0.5em))
