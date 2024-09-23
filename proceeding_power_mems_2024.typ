@@ -36,12 +36,15 @@
 #h(0.635cm)
 #lorem(140)
 
+@figure_1
+
 = Section 2
 
 #figure(
   align(center,image("test.jpg", width: 70%)),
   caption: [test image et légende],
-)
+)<figure_1>
+
 
 #h(0.635cm)
 #lorem(100)

@@ -20,14 +20,29 @@
     font: "Times New Roman",
     size: 10pt,
   )
-  show bibliography: set block(height: 0.6em, below: 0.6em)
+  
+  show bibliography: set block(height: 0.7em, below: 0.7em)
+
+
   show figure.caption: emph
   show figure.caption: set align(start)
   show figure.where(kind: table): set figure.caption(position: top)
+  show figure.caption.where(kind: table): set align(center)
+
+
+  show table: set par(justify: false)
+  
+  set table(
+    fill: (x,y) =>
+      if x >=1 and y == 1 or x>=1 and y ==3 or x>=1 and y ==5 {
+        gray.lighten(40%)
+      },
+    align: horizon
+  )
+
   show heading: set block(spacing: 1em)
   show heading.where(level: 1): it => block(text(size: 12pt,strong(upper(it.body))) + v(-0.5em))
   show heading.where(level: 2): it => block(text(size: 10pt, strong(it.body))+ v(-0.4em))
-  
   set align(center)
   strong[#upper(text(14pt, title))]
 
